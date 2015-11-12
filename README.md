@@ -99,9 +99,9 @@ floorSpace | decimal | The venues floor space in sq feet
 height | decimal | The venues height in feet
 sqM | decimal | The venues floor space in sq meters
 m | decimal | The venues height in meters
-prime | bool | Whether the venue is prime
-partner | bool | Whether the venue is partner
-newFilter | bool | Whether this is a new venue
+prime | bool | Whether the venue is prime (Explained below)
+partner | bool | Whether the venue is partner (Explained below)
+newFilter | bool | Whether this is a new venue (Explained below)
 
 
 
