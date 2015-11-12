@@ -66,6 +66,7 @@ This endpoint takes a JSON body like so:
 }
 ```
 Search has a LOT of available filters with only a couple that are required at the top of the following list.
+
 Filter | Type | Description
 :---: | :---: | :---
 city | int | The city id to search in (See below for possible values)
