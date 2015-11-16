@@ -61,7 +61,7 @@ We are presenting a prize to a team for the best use of our API
 ## Authentication
 We want you to create awesome stuff with our data as fast as possible, so we've made it super easy for you to access our API.
 All it requires is a Basic Authentication header with each request:
-```json
+```
 Authorization: Basic aGFja2tpbmdzOlRuMllXaWRTejNLTWlTTjJN
 ```
 
@@ -71,7 +71,7 @@ All of the endpoints except for Search have a GetAll endpoint and a singular end
 
 #### Venues
 You can query all our 4000+ venues or query just one by using the venue id which you may possibly get from search, spaces or usages. 
-```json
+```
 HTTP GET
 https://api.hirespace.com/Api/Venues/
 https://api.hirespace.com/Api/Venues/{id}
@@ -79,7 +79,7 @@ https://api.hirespace.com/Api/Venues/{id}
 
 #### Spaces
 We have over 8000 spaces, all have a parent venue and most have children usages.
-```json
+```
 HTTP GET
 https://api.hirespace.com/Api/Spaces/
 https://api.hirespace.com/Api/Spaces/{id}
@@ -87,7 +87,7 @@ https://api.hirespace.com/Api/Spaces/{id}
 
 #### Usages
 Lastly we have just a little over 17,000 usages, so I'd recommend not getting all the usages and parsing every single one individually. You can get a set of usages from a space.
-```json
+```
 HTTP GET
 https://api.hirespace.com/Api/Usages/
 https://api.hirespace.com/Api/Usages/{id}
@@ -96,14 +96,14 @@ https://api.hirespace.com/Api/Usages/{id}
 #### Search
 Search is a very special endpoint. We use a form of elastic search on the server called Lucene.Net which is the .Net port of the Java version and we index all our venues on a daily basis to get the most up-to-date searches. 
 
-```json
+```
 HTTP POST
 Content-Type: application/json
 https://api.hirespace.com/Api/Search/
 ```
 
 This endpoint takes a JSON body like so:
-```json
+```
 {
     "city": "1",
     "maxPrice": 2000
@@ -327,10 +327,15 @@ The actual image url is in this format:
 `<CDN Url>/<ImageRatio>-<ImageSize>/<UsageId>/<FileName>`
 
 For example:
+
 `https://az413805.vo.msecnd.net/spaces/oc-rxl/11271/ih34ukdsn42.jpg`
+
 `https://az413805.vo.msecnd.net/spaces` - This is the CDN Url
+
 `oc-rxl` - This is the Image Ratio and the Image Size
+
 `11271` - This is the Usage Id
+
 `ih34ukdsn42.jpg` - This is the File Name (This can be found in the Usages data structure `UsageImages > Name`)
 
 # Support/Contact
@@ -339,6 +344,9 @@ For example:
 Will and Tom will be walking around Hack Kings in green Hire Space t-shirts, come find us anytime, we'll always be availble for technical support, working at Hire Space and general chit chat. 
 
 Or you can find us in our public HackKings slack channel ???
+
 Or by email at:
+
 thomas@hirespace.com
+
 will@hirespace.com
