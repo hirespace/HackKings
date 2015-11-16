@@ -1,0 +1,299 @@
+{
+	VenueId: {
+		type: integer,
+		description: "The unique identifier for the venue",
+		nullable: false
+	},
+	CityName: {
+		type: string,
+		description: "The name of the city the venue is located in",
+		nullable: true
+	},
+	VenueName: {
+		type: string,
+		description: "The name of the venue",
+		nullable: false
+	},
+	Description: {
+		type: string,
+		description: "The venues description",
+		nullable: false
+	},
+	Address1: {
+		type: string,
+		description: "The first line of the venues address",
+		nullable: false
+	},
+	Address2: {
+		type: string,
+		description: "The second line of the venues address",
+		nullable: false
+	},
+	Locality: {
+		type: string,
+		description: "The area the venue is located in",
+		nullable: false
+	},
+	County: {
+		type: string,
+		description: "The county the venue is located in",
+		nullable: false
+	},
+	Postcode: {
+		type: string,
+		description: "The venues post code",
+		nullable: false
+	},
+	DefaultPictureProfile: {
+		type: string,
+		description: "",
+		nullable: false
+	},
+	DefaultPictureListing: {
+		type: string,
+		description: "",
+		nullable: false
+	},
+	QualityScore: {
+		type: null,
+		description: "Deprecated - will be null",
+		nullable: true
+	},
+	NearestTube: {
+		type: string,
+		description: "The nearest transport link",
+		nullable: true
+	},
+	Latitude: {
+		type: decimal,
+		description: "The latitude co-ordinate of the venue",
+		nullable: true
+	},
+	Longitude: {
+		type: decimal,
+		description: "The longitude co-ordinate of the venue",
+		nullable: true
+	},
+	StreetViewLat: {
+		type: decimal,
+		description: "The latitude co-ordinate of the Google streetview for the venue",
+		nullable: true
+	},
+	StreetViewLong: {
+		type: decimal,
+		description: "The longitude co-ordinate of the Google streetview for the venue",
+		nullable: true
+	},
+	Heading: {
+		type: integer,
+		description: "The heading for Google streetview",
+		nullable: true
+	},
+	Pitch: {
+		type: integer,
+		description: "The pitch for Google streetview",
+		nullable: true
+	},
+	Spaces: {
+		type: object,
+		description: "Will always be null",
+		nullable: true
+	},
+	City: {
+		type: object,
+		description: "Will always be null",
+		nullable: true
+	},
+	Upv: {
+		type: integer,
+		description: "",
+		nullable: false
+	},
+	Status: {
+		type: integer,
+		description: "The status of the venue - see PublishStatus below",
+		nullable: false
+	},
+	PrimeStatus: {
+		type: integer,
+		description: "The prime status - see PromotionsStatus below",
+		nullable: false
+	},
+	PartnerStatus: {
+		type: integer,
+		description: "The partner status - see PromotionsStatus below",
+		nullable: false
+	},
+	CityId: {
+		type: integer,
+		description: "The city id - See Cities below",
+		nullable: false
+	},
+	Users: {
+		type: object,
+		description: "Will always be null",
+		nullable: true
+	},
+	InternalCatering: {
+		type: boolean,
+		description: "Whether the venue has their own catering",
+		nullable: false
+	},
+	Bar: {
+		type: boolean,
+		description: "Whether the venue has their own bar",
+		nullable: false
+	},
+	CateringEquipment: {
+		type: boolean,
+		description: "Whether the venue has catering equipment",
+		nullable: false
+	},
+	AllowsExternalCatering: {
+		type: boolean,
+		description: "Whether the venue allows external caterers to come in",
+		nullable: false
+	},
+	AllowsExternalAlcohol: {
+		type: boolean,
+		description: "Whether the venue allows external alcohol to be brought in",
+		nullable: false
+	},
+	CorkageCharge: {
+		type: boolean,
+		description: "Whether the venue has a corkage charge for external alcohol",
+		nullable: false
+	},
+	Kitchenette: {
+		type: boolean,
+		description: "Whether the venue has a small kitchen",
+		nullable: false
+	},
+	ProfessionalKitchen: {
+		type: boolean,
+		description: "Whether the venue has a professional kitchen",
+		nullable: false
+	},
+	SpaceForExternalCateringEquipment: {
+		type: boolean,
+		description: "Whether the venue has space for external catering equipment",
+		nullable: false
+	},
+	RecommendedCaterers: {
+		type: boolean,
+		description: "Whether the venue has a list of recommended caterers",
+		nullable: false
+	},
+	AllowsExternalSuppliers: {
+		type: boolean,
+		description: "Whether the venue allows external suppliers",
+		nullable: false
+	},
+	KitchenBuyOutFee: {
+		type: integer,
+		description: "The venues kitchen buyout fee",
+		nullable: false
+	},
+	HalalCatering: {
+		type: boolean,
+		description: "Whether the venue can provide Halal catering",
+		nullable: false
+	},
+	KosherCatering: {
+		type: boolean,
+		description: "Whether the venue can provide Kosher catering",
+		nullable: false
+	},
+	EquipmentCharge: {
+		type: boolean,
+		description: "Whether the venue has a charge for using their equipment",
+		nullable: false
+	},
+	AlcoholLicence: {
+		type: boolean,
+		description: "Whether the venue has an alcohol licence",
+		nullable: false
+	},
+	Accomodation: {
+		type: boolean,
+		description: "Whether the venue can provide accommodation",
+		nullable: false
+	},
+	NumberOfRooms: {
+		type: integer,
+		description: "The number of rooms the venue can provide",
+		nullable: false
+	},
+	Parking: {
+		type: boolean,
+		description: "Whether the venue has parking available",
+		nullable: false
+	},
+	NumberOfSpaces: {
+		type: integer,
+		description: "The amount of parking spaces available",
+		nullable: false
+	},
+	HomeTruths: {
+		type: object,
+		description: "Will be null",
+		nullable: true
+	},
+	FacilitiesCount: {
+		type: integer,
+		description: "The amount of facilities the venue has",
+		nullable: false
+	},
+	LastEdited: {
+		type: date,
+		description: "The last date the venue was edited",
+		nullable: true
+	},
+	HideStreetView: {
+		type: boolean,
+		description: "Whether the streetview map is hidden on the venues profile",
+		nullable: true
+	},
+	AccountManager: {
+		type: string,
+		description: "The account manager for the venue - In the form of a Hire Space email address",
+		nullable: true
+	},
+	Promotions: {
+		type: object,
+		description: "A promotions object",
+		nullable: false,
+		properties: {
+			Prime: {
+				type: integer,
+				description: "The prime status of the venue - see Promotions Status below",
+				nullable: false
+			},
+			Partner: {
+				type: integer,
+				description: "The partner status of the venue - see Promotions Status below",
+				nullable: false
+			},
+			PrimeDescription: {
+				type: string,
+				description: "The description of the last bought prime",
+				nullable: true
+			},
+			PrimePrice: {
+				type: decimal,
+				description: "The price of the last bought prime",
+				nullable: false
+			},
+			PrimeStart: {
+				type: date,
+				description: "The start date of the last bought prime",
+				nullable: true
+			},
+			PrimeFinish: {
+				type: date,
+				description: "The finish date of the last bought prime",
+				nullable: true
+			}
+		}
+	}
+}

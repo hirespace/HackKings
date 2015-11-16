@@ -1,0 +1,500 @@
+{
+	SpaceId: {
+		type: integer,
+		description: "The parent spaces unique identifier",
+		nullable: false
+	},
+	SpaceName: {
+		type: string,
+		description: "The name of the parent space",
+		nullable: false
+	},
+	VenueId: {
+		type: integer,
+		description: "The unique identifier of the parents spaces parent venue",
+		nullable: false
+	},
+	UsageId: {
+		type: integer,
+		description: "The unique identifier of the usage",
+		nullable: false
+	},
+	UsageName: {
+		type: string,
+		description: "The name of the usage",
+		nullable: false
+	},
+	Description: {
+		type: string,
+		description: "The description of the usage",
+		nullable: false
+	},
+	VenueName: {
+		type: string,
+		description: "The name of the parent spaces parent venue",
+		nullable: false
+	},
+	Capacities: {
+		type: array,
+		description: "An array of the usage capacities",
+		nullable: false,
+		properties: {
+			CapacityId: {
+				type: integer,
+				description: "The unique identifier for the type of capacity",
+				nullable: false
+			},
+			CapacityName: {
+				type: string,
+				description: "The name of the capacity",
+				nullable: false
+			},
+			Value: {
+				type: integer,
+				description: "The actual capacity of the usage",
+				nullable: false
+			}
+		}
+	},
+	UsageImages: {
+		type: array,
+		description: "An array of the images - See below to see how to use this data",
+		nullable: false,
+		properties: {
+			Name: {
+				type: string,
+				description: "The name of the image file along with the image extension",
+				nullable: false
+			},
+			SuitabilityForSizes: {
+				type: array,
+				description: "An array of the available suitable sizes for the image - More information of this can be found below",
+				nullable: false, 
+				properties {
+					sq-xxs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-xs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-s: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-sm: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-m: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-ml: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-l: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-xl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-xxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-xxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-rxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-rxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					sq-rxxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-xxs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-xs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-s: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-sm: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-m: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-ml: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-l: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-xl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-xxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-xxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-rxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-rxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ls-rxxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-xxs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-xs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-s: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-sm: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-m: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-ml: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-l: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-xl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-xxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-xxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-rxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-rxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					pt-rxxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-xxs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-xs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-s: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-sm: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-m: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-ml: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-l: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-xl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-xxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-xxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-rxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-rxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					oc-rxxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-xxs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-xs: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-s: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-sm: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-m: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-ml: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-l: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-xl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-xxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-xxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-rxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-rxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					},
+					ba-rxxxl: {
+						type: boolean,
+						description: "An image size",
+						nullable: false
+					}
+				}
+			}
+		}
+	},
+	Prices: {
+		type: array,
+		description: "An array of available prices",
+		nullable: false,
+		properties: {
+			UsageId: {
+				type: integer,
+				description: "The usage unique identifier this price applies too",
+				nullable: false
+			},
+			Price: {
+				type: integer,
+				description: "The actual price",
+				nullable: false
+			},
+			MinPrice: {
+				type: integer,
+				description: "The minimum price - also the same as Price",
+				nullable: false
+			},
+			MaxPrice: {
+				type: integer,
+				description: "The maximum price - this is set if the Price Classification is set to Range (2)",
+				nullable: true
+			},
+			Range: {
+				type: boolean,
+				description: "This has been deprecated and is now replaced by Price Classification",
+				nullable: false
+			},
+			DaysOfWeek: {
+				type: integer,
+				description: "This is the days of the week in which this price applies too - See Days of Week below",
+				nullable: false
+			},
+			StartDate: {
+				type: datetime,
+				description: "This is the start date of the price - this is set if Indefinite is set to false",
+				nullable: true
+			},
+			EndDate: {
+				type: datetime,
+				description: "This is the end date of the price - this is set if Indefinite is set to false",
+				nullable: true
+			},
+			Indefinite: {
+				type: boolean,
+				description: "Whether the price date range is indefinite",
+				nullable: false
+			},
+			PriceClassification: {
+				type: integer,
+				description: "The price classification of this current price - see Price Classification below",
+				nullable: false
+			},
+			StartTime: {
+				type: time,
+				description: "The start time in which the price takes effect",
+				nullable: false
+			},
+			EndTime: {
+				type: time,
+				description: "The end time in which the price stops",
+				nullable: false
+			},
+			PricingByDelegateType: {
+				type: integer,
+				description: "Whether the price is based on time or delegate - see Pricing Delegate Type below",
+				nullable: false
+			},
+			PricingStructureType: {
+				type: integer,
+				description: "The structure of the price - see Pricing Structure below",
+				nullable: false
+			},
+			PricingByTimeType: {
+				type: integer,
+				description: "The time period which the price is classed as - See Pricing Time Type below",
+				nullable: false
+			}
+		}
+	},
+	UsageStatus: {
+		type: integer,
+		description: "The status of the usage - see Publish Status below",
+		nullable: false
+	},
+	VenueStatus: {
+		type: integer,
+		description: "The status of the parent space parents venue - see Publish Status below",
+		nullable: false
+	},
+	SpaceStatus: {
+		type: integer,
+		description: "The status of the parent space - see Publish Status below",
+		nullable: false
+	}
+}

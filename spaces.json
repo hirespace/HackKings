@@ -1,0 +1,124 @@
+{
+	SpaceId: {
+		type: integer,
+		description: "The unique identifier of the space",
+		nullable: false
+	},
+	Status: {
+		type: integer,
+		description: "The status of the space - See Publish Status below",
+		nullable: false
+	},
+	VenueId: {
+		type: integer,
+		description: "The id if the parent venue",
+		nullable: false
+	},
+	DisabledAccess: {
+		type: boolean,
+		description: "Whether the space has disabled access",
+		nullable: false
+	},
+	AdditionalCharges: {
+		type: string,
+		description: "Any additional charges the space may have",
+		nullable: true
+	},
+	PriceStrictness: {
+		type: integer,
+		description: "The strictness of the price - See Price Strictness below",
+		nullable: false
+	},
+	HoursStrictness: {
+		type: integer,
+		description: "The strictness of the hours - See Hours Strictness below",
+		nullable: false
+	},
+	SpaceName: {
+		type: string,
+		description: "The name of the space",
+		nullable: false
+	},
+	SpaceAreaSqm: {
+		type: decimal,
+		description: "The square meter area of the space - If this is null then SpaceAreaSqft should have a value",
+		nullable: true
+	},
+	SpaceAreaSqft: {
+		type: decimal,
+		description: "The square foot area of the space - If this is null then SpaceAreaSqm should have a value",
+		nullable: true
+	},
+	HeightM: {
+		type: decimal,
+		description: "The height of the space in meters",
+		nullable: true
+	},
+	HeightFt: {
+		type: decimal,
+		description: "The height of the space in feet",
+		nullable: true
+	},
+	StorageSpace: {
+		type: boolean,
+		description: "Whether the space has storage available",
+		nullable: false
+	},
+	OutdoorSpace: {
+		type: boolean,
+		description: "Whether the space has an outdoor area",
+		nullable: false
+	},
+	FreeWifi: {
+		type: boolean,
+		description: "Whether the space has free WiFi available",
+		nullable: false
+	},
+	TimeLicensedUntil: {
+		type: integer,
+		description: "The hour of the day in which the space is licenced till",
+		nullable: false
+	},
+	WeddingLicence: {
+		type: boolean,
+		description: "Whether the space has a wedding licence",
+		nullable: false
+	},
+	ExtensionsAvailable: {
+		type: boolean,
+		description: "Whether the space has extensions available",
+		nullable: false
+	},
+	ExtensionsAvailableUntil: {
+		type: time,
+		description: "The time in which the extension can be available until",
+		nullable: true
+	},
+	TENSAvailable: {
+		type: boolean,
+		description: "Whether the space has a TENs licence",
+		nullable: false
+	},
+	Usages: {
+		type: array,
+		description: "An array of usages which the space owns",
+		nullable: false,
+		properties: {
+			UsageId: {
+				type: integer,
+				description: "The usage unique identifier",
+				nullable: false
+			},
+			Status: {
+				type: integer,
+				description: "The status of the usage - See Publish Status below",
+				nullable: false
+			},
+			UsageName: {
+				type: string,
+				description: "The name of the usage",
+				nullable: false
+			}
+		}
+	}
+}
