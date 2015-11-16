@@ -10,11 +10,11 @@
      * [Usages](#usages)
      * [Search](#search)
  * [OData](#odata)
- * [Data Structures](#data-structure)
-   * [Venues]()
-   * [Spaces]()
-   * [Usages]()
-   * [Search]()
+ * [Data Structures](#data-structures)
+   * [Venues](#venues-1)
+   * [Spaces](#spaces-1)
+   * [Usages](#usages-1)
+   * [Search](#search-1)
  * [Classes](#classes)
    * [Cities](#cities)
    * [Publish Status](#publish-status)
@@ -29,8 +29,7 @@
    * [Pricing Structure Type](#pricingstructuretype)
    * [Pricing By Time Type](#pricingbytimetype)
  * [Images](#images)
- * [Example Requests](#example-requests)
- * [Support/Contact](#support-contact)
+ * [Support/Contact](#supportcontact)
 
 # Working at HS (Culture, Values, How We Work)
 @Will 
@@ -171,22 +170,22 @@ Here is a list of the data structures that will be returned from each endpoint. 
 #### Venues
 This is the schema of the `Venues` data structure. This is what the single venues endpoint will return. The multiple venues endpoint will return an array of this object.
 
-[Venues Data Structure](/venues.json)
+[Venues Data Structure](/venues.txt)
 
 #### Spaces
 This is the schema of the `Spaces` data structure. This is what the single spaces endpoint will return. The multiple spaces endpoint will return an array of this object.
 
-[Spaces Data Structure](/spaces.json)
+[Spaces Data Structure](/spaces.txt)
 
 #### Usages
 This is the schema of the `Usages` data structure. This is what the single usages endpoint will return. The multiple usages endpoint will return an array of this object.
 
-[Usages Data Structure](/usages.json)
+[Usages Data Structure](/usages.txt)
 
 #### Search
 This is the schema of `Search` data structure. This is what the seatch endpoint will return. It has a maximum of 300 search results along with the initial query and any search assumptions. 
 
-[Search Data Structure](/search.json)
+[Search Data Structure](/search.txt)
 
 # Classes
 
@@ -235,8 +234,8 @@ Price Strictness | Name
 2 | Negotiatiable
 3 | Fixed Price
 
-#### Images Ratios
-Each image is resized multiple times using these ratios. Not all images have every ratio available and so you should check the `SuitabilityForSizes` property in the [Usages](/usages.json) data struture.
+#### Image Ratios
+Each image is resized multiple times using these ratios. Not all images have every ratio available and so you should check the `SuitabilityForSizes` property in the [Usages](/usages.txt) data struture.
 
 Name | Label | Minimum Ratio Width to Height | Maximum Ratio Width to Height
 --- | --- | --- | ---
@@ -247,7 +246,7 @@ Original Constrained | oc | 0.5 | 2
 Banner | ba | 2.4 | 2.4
 
 #### Image Sizes
-Each image is also resized multiple times using these different sizes. Again, not all images have every size available and so you should check the `SuitabilityForSizes` property in the [Usages](/usages.json) data struture.
+Each image is also resized multiple times using these different sizes. Again, not all images have every size available and so you should check the `SuitabilityForSizes` property in the [Usages](/usages.txt) data struture.
 
 Name | Label | Destination Width (in px)
 --- | --- | ---
