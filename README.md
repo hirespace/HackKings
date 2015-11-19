@@ -31,8 +31,11 @@
  * [Images](#images)
  * [Support/Contact](#supportcontact)
 
-# Working at HS (Culture, Values, How We Work)
-@Will 
+# Working at HS
+
+Hire Space is the UK’s leading venue marketplace, revolutionising the way people find and book venues. We help people create memorable events by putting the perfect venues at their fingertips.
+
+We're a growing team of ambitious,talented and passionate individuals who enjoy working in an exciting and collaborative environment that encourages innovation and contribution from everyone.
 
 # Placement
 We take on a single placement student every year and are currently looking for one to start in June 2016. We are looking for someone with experience in some of these areas:
@@ -41,16 +44,17 @@ We take on a single placement student every year and are currently looking for o
  * Full Stack Development
  * Angular JS
 
-@Will I'm not so sure what you want written here
+If you think you've got what it takes to work at one of London's top start-ups then send your CV to will@hirespace.com.
 
 # Prizes
 We are presenting a prize to a team for the best use of our API
 
-@Will
-
 * Console Log Recognition
+Have your name printed on 100,000 consoles.
 * Amazon Giftcards
+2x £100
 * Invite to a free event
+Tickets for you and a friend to attend one of our legendary venue showcases. Champagne at Tower of London? Cocktails at Shoreditches latest most trendy venue?
 * Swag
   * Stickers
   * TShirts
@@ -339,9 +343,8 @@ For example:
 `ih34ukdsn42.jpg` - This is the File Name (This can be found in the Usages data structure `UsageImages > Name`)
 
 # Support/Contact
-@Will
 
-Will and Tom will be walking around Hack Kings in green Hire Space t-shirts, come find us anytime, we'll always be availble for technical support, working at Hire Space and general chit chat. 
+Will and Tom will be walking around Hack Kings in Hire Space t-shirts, come find us anytime, we'll always be availble for technical support, working at Hire Space and general chit chat. 
 
 Or you can find us in our public tlk.io channel: https://tlk.io/hirespace
 
