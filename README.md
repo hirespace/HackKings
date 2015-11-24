@@ -51,7 +51,7 @@ We are presenting a prize to a team for the best use of our API
 
 * Console Log Recognition: Have all your names printed on 100,000 consoles.
 * Amazon Giftcards: £50 per team member
-* Invite to a free event: Tickets for you and a friend to attend one of our legendary venue showcases. Champagne at Tower of London? Cocktails at Shoreditches latest most trendy venue?
+* Invite to a free event: Tickets for each member of your team to attend one of our legendary venue showcases. Champagne at Tower of London? Cocktails at Shoreditches latest most trendy venue?
 * Swag
   * Stickers
   * TShirts
