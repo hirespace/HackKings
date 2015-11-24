@@ -49,12 +49,9 @@ If you think you've got what it takes to work at one of London's top start-ups t
 # Prizes
 We are presenting a prize to a team for the best use of our API
 
-* Console Log Recognition
-Have your name printed on 100,000 consoles.
-* Amazon Giftcards
-2x £100
-* Invite to a free event
-Tickets for you and a friend to attend one of our legendary venue showcases. Champagne at Tower of London? Cocktails at Shoreditches latest most trendy venue?
+* Console Log Recognition: Have all your names printed on 100,000 consoles.
+* Amazon Giftcards: £50 per team member
+* Invite to a free event: Tickets for you and a friend to attend one of our legendary venue showcases. Champagne at Tower of London? Cocktails at Shoreditches latest most trendy venue?
 * Swag
   * Stickers
   * TShirts
