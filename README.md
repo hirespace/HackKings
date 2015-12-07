@@ -340,7 +340,7 @@ For example:
 
 Will and Tom will be walking around Hack Kings in Hire Space t-shirts, come find us anytime, we'll always be availble for technical support, working at Hire Space and general chit chat. 
 
-Or you can find us in our public tlk.io channel: https://tlk.io/hirespace
+Or you can find us in the Hack Kings slack team in the #hirespace channel, or dm us @tom-hirespace
 
 Or by email at:
 
