@@ -111,39 +111,40 @@ Search has a LOT of available filters with none required. All can be used like t
 
 Filter | Type | Description
 :---: | :---: | :---
-city | int | The city id to search in (See below for possible values)
-searchTerm | string |  Type of venue to search for (See below for possible values)
-capacity | int | The maximum amount of people the venue can hold
-longitude | decimal | The centre point for the search
-latitude | decimal | The centre point for the search
-radius | int | The distance around the centre point in miles to search in
-minPrice | int | The minimum price that a venue can be hired for
-maxPrice | int | The maximum price that a venue can be hired for
-ownCatering | bool | Whether you can use your own caterer
-ownAlcohol | bool | Whether you can bring your own alcohol
-venueCatering | bool | Whether the venue has their own caterers which you can use
-kitchenette | bool | Whether there is a small kitchen you can use
-kitchen | bool | Whether there is a larger kitchen you can use
-cateringEquipment | bool | Whether there is catering equipment you can use
-spaceForEquipment | bool | Whether there is space to bring your own equipment
-halal | bool | Whether the venue can provide Halal food
-kosher | bool | Whether the venue can provide Kosher food
-accommodation | bool | Whether the venue can accommodate guests
-parking | bool | Whether the venue has parking available
-disabledAccess | bool | Whether the venue has disabled access
-outsideSpace | bool | Whether the venue has outside space
-storageSpace | bool | Whether the venue has storage space
-wifi | bool | Whether the venue has WiFi available
-weddingLicence | bool | Whether the venue has a wedding licence
-alcoholLicence | bool | Whether the venue has an alcohol licence
-TENs | bool | Whether the venue has a TENs licence
-floorSpace | decimal | The venues floor space in sq feet
-height | decimal | The venues height in feet
-sqM | decimal | The venues floor space in sq meters
-m | decimal | The venues height in meters
-prime | bool | Whether the venue is prime
-partner | bool | Whether the venue is partner
-newFilter | bool | Whether this is a new venue
+CityId | int | The city id to search in (See below for possible values)
+SearchTerm | string |  Type of venue to search for (See below for possible values)
+Capacity | int | The maximum amount of people the venue can hold
+CapacityTypeId | string | The id of the capacity (See below for possible values)
+Longitude | decimal | The centre point for the search
+Latitude | decimal | The centre point for the search
+Radius | int | The distance around the centre point in miles to search in
+MinimumPrice | int | The minimum price that a venue can be hired for
+MaximumPrice | int | The maximum price that a venue can be hired for
+ExternalCatering | bool | Whether you can use your own caterer
+ExternalAlcohol | bool | Whether you can bring your own alcohol
+HasVenueCatering | bool | Whether the venue has their own caterers which you can use
+HasKitchenette | bool | Whether there is a small kitchen you can use
+HasKitchen | bool | Whether there is a larger kitchen you can use
+HasCateringEquipment | bool | Whether there is catering equipment you can use
+HasSpaceForEquipment | bool | Whether there is space to bring your own equipment
+CanProvideHalal | bool | Whether the venue can provide Halal food
+CanProvideKosher | bool | Whether the venue can provide Kosher food
+Accommodation | bool | Whether the venue can accommodate guests
+ParkingSpaces | bool | Whether the venue has parking available
+HasSisabledAccess | bool | Whether the venue has disabled access
+HasOutsideSpace | bool | Whether the venue has outside space
+HasStorageSpace | bool | Whether the venue has storage space
+HasWifi | bool | Whether the venue has WiFi available
+HasWeddingLicence | bool | Whether the venue has a wedding licence
+HasAlcoholLicence | bool | Whether the venue has an alcohol licence
+HasTENsLicense | bool | Whether the venue has a TENs licence
+FloorSpace | decimal | The venues floor space
+Height | decimal | The venues height
+FloorSpaceInSqMetres | bool | Whether the floor space is in metres
+HeightInMetres | bool | Whether the height is in metres
+IsPrime | bool | Whether the venue is prime
+IsPartner | bool | Whether the venue is partner
+IsFilter | bool | Whether this is a new venue
 
 ## OData
 On the `Api/Venues`, `Api/Spaces` and `Api/Usages` endpoints, you can add OData queries to further filter the infomation by any field, sort the data, skip, top and do much more. You can view a detailed document of how to do this here: https://msdn.microsoft.com/en-gb/library/gg309461.aspx
@@ -315,6 +316,23 @@ Time Type | Name
 6 | Morning
 7 | Afternoon
 8 | Evening
+
+#### CapacityTypeId
+This defines different types of capacities
+
+Capacity Id | Name
+--- | ---
+1 | Boardroom
+2 | Buffet
+3 | Cabaret
+4 | Classroom
+5 | Dining
+6 | Dinner Dance
+7 | Reception
+8 | Standing
+9 | Theatre
+10 | U-Shaped
+11 | Wedding
 
 # Images
 All of our images from our CDN are all available to use, an image is linked to a Usage as shown in the Usages data structure above. All you need to get an image is the `UsageId`, `FileName`, `ImageSize` and the `ImageRatio`, all of which can be found above. In the usages data structure, there is a list of the suitable image ratio and size combinations, this states whether a certain combination is available to use.
