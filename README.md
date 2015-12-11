@@ -71,24 +71,24 @@ All of the endpoints except for Search have a GetAll endpoint and a singular end
 You can query all our 4000+ venues or query just one by using the venue id which you may possibly get from search, spaces or usages. 
 ```
 HTTP GET
-https://api.hirespace.com/Api/Venues/
-https://api.hirespace.com/Api/Venues/{id}
+https://hackkings.hirespace.com/Api/Venues/
+https://hackkings.hirespace.com/Api/Venues/{id}
 ```
 
 #### Spaces
 We have over 8000 spaces, all have a parent venue and most have children usages.
 ```
 HTTP GET
-https://api.hirespace.com/Api/Spaces/
-https://api.hirespace.com/Api/Spaces/{id}
+https://hackkings.hirespace.com/Api/Spaces/
+https://hackkings.hirespace.com/Api/Spaces/{id}
 ```
 
 #### Usages
 Lastly we have just a little over 17,000 usages, so I'd recommend not getting all the usages and parsing every single one individually. You can get a set of usages from a space.
 ```
 HTTP GET
-https://api.hirespace.com/Api/Usages/
-https://api.hirespace.com/Api/Usages/{id}
+https://hackkings.hirespace.com/Api/Usages/
+https://hackkings.hirespace.com/Api/Usages/{id}
 ```
 
 #### Search
@@ -97,7 +97,7 @@ Search is a very special endpoint. We use a form of elastic search on the server
 ```
 HTTP POST
 Content-Type: application/json
-https://api.hirespace.com/Api/Search/
+https://hackkings.hirespace.com/Api/Search/
 ```
 
 This endpoint takes a JSON body like so:
@@ -153,12 +153,12 @@ But here are a couple examples to get you started:
 ```json
 This will skip the first 10 venues and get the next 10 venues:
 HTTP GET
-https://api.hirespace.com/Api/Venues?$skip=10&$top=10
+https://hackkings.hirespace.com/Api/Venues?$skip=10&$top=10
 ```
 ```json
 This request would get all the venues that are located in Soho
 HTTP GET
-https://api.hirespace.com/Api/Venues?$filter=Locality eq 'Soho'
+https://hackkings.hirespace.com/Api/Venues?$filter=Locality eq 'Soho'
 ```
 
 You can `$filter` by any field you see in the data structures below, as well as `$orderby` and `$select` them. These OData queries will not work on the endpoints that have an id attached to the end of them. You can see how this too becomes a powerful search tool, but it can also be quite costly in terms of time depending on the endpoint. 
