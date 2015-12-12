@@ -67,6 +67,23 @@ Authorization: Basic aGFja2tpbmdzOlRuMllXaWRTejNLTWlTTjJN
 We have several possible end points for you all to use. 
 All of the endpoints except for Search have a GetAll endpoint and a singular endpoint which all take an id. We have a lot of data and so querying all usages for example isn't recommended, but we use a special query filtering tool called OData which you can read more about down below. Also remember to add the above authentication header in with each request, otherwise you'll get back a 401 Unauthorised status code.
 
+## JavaScript Framework
+We've added a little JS framework to use our API to get you started!
+Just drop https://github.com/hirespace/HackKings/app.js into your project, reference it and start accessing our API straight away!
+
+How do you use it?
+
+There will be a global `HireSpace` object which has 7 methods for you to use:
+`HireSpace.Search(searchObject, callback)`
+`HireSpace.GetUsage(usageId, callback)`
+`HireSpace.GetSpace(spaceId, callback)`
+`HireSpace.GetVenue(venueId, callback)`
+`HireSpace.GetAllUsages(callback)`
+`HireSpace.GetAllSpaces(callback)`
+`HireSpace.GetAllVenues(callback)`
+
+Each `callback` returns a single data parameter which consists of the return object which are all below
+
 #### Venues
 You can query all our 4000+ venues or query just one by using the venue id which you may possibly get from search, spaces or usages. 
 ```
