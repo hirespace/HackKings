@@ -66,7 +66,7 @@ Authorization: Basic aGFja2tpbmdzOlRuMllXaWRTejNLTWlTTjJN
 
 ## JavaScript Framework
 We've added a little JS framework to use our API to get you started!
-Just drop https://github.com/hirespace/HackKings/app.js into your project, reference it and start accessing our API straight away!
+Just drop https://github.com/hirespace/HackKings/blob/master/app.js into your project, reference it and start accessing our API straight away!
 
 How do you use it?
 
