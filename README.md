@@ -144,7 +144,7 @@ FloorSpaceInSqMetres | bool | Whether the floor space is in metres
 HeightInMetres | bool | Whether the height is in metres
 IsPrime | bool | Whether the venue is prime
 IsPartner | bool | Whether the venue is partner
-IsFilter | bool | Whether this is a new venue
+IsNew | bool | Whether this is a new venue
 
 ## OData
 On the `Api/Venues`, `Api/Spaces` and `Api/Usages` endpoints, you can add OData queries to further filter the infomation by any field, sort the data, skip, top and do much more. You can view a detailed document of how to do this here: https://msdn.microsoft.com/en-gb/library/gg309461.aspx
